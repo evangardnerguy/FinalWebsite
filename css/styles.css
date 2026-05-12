@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     /* SLL BOCES Brand Colors */
     --color-blue: #3fc0f8;   
@@ -20,10 +26,12 @@
     --radius: 8px;
     --border-gold: 2px solid var(--color-gold);
 }
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200..700&display=swap');
 
+/* ============ NAV SECTION ============ */
 header {
     background-color: var(--color-dark);
-    position: sticky;
+    position: relative;
     top: 0;
     left: 0;
     z-index: 100;
@@ -37,7 +45,7 @@ header {
     padding: 1rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    font-family: var(--font-main);
+    font-family: var(--font-bold);
 }
 
 .nav-logo {
@@ -64,10 +72,10 @@ header {
     color: var(--color-gold);
 
 }
-
+/* ============ HERO SECTION ============ */
 #hero {
     background-image: url('../images/digitalVault.png');
-    background-size: center;
+    background-size: fill;
     background-position: top;
     min-height: 50vh;
     font-family: var(--font-bold);
@@ -96,7 +104,7 @@ header {
     font-size: 2.6rem;
     margin-bottom: 1.5rem;
     text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
-
+    text-align: center;
 }
 
 .hero-content h5 {
@@ -130,28 +138,37 @@ header {
     background-color: var(--color-blue);
     color: var(--color-dark);
 }
-
+/* ============ DATA SECTION ============ */
 .cards-section {
-    padding: 4rem 0;
+    padding: 1rem 5rem;
     background-color: var(--color-ltblue);
 }
 
 .cards-section h5 {
     color: var(--color-blue);
+    font-size: 0.9rem;
+    font-family: var(--font-bold);
 }
 
-.subtext {
+.cards-section h3 {
     color: var(--color-black);
+    font-size: 1.3rem;
+    font-family: var(--font-bold);
 }
 
-.subbertext {
+.cards-section p {
     color: var(--color-dark);
+    font-size: 1.1rem;
+    font-family: var(--font-bold);
 }
 
 .cards-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr;
     gap: 2rem;
+    padding: 3rem;
+    max-width: 1200px;
+    min-width: 600px;
 }
 
 .card {
@@ -176,6 +193,8 @@ header {
     color: var(--color-blue);
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    text-align: center;
+    font-family: var(--font-bold);
 }
 .card-content h4 {
     color: var(--color-ltblue);
@@ -190,4 +209,104 @@ header {
     margin-bottom: 0.5rem;
     line-height: 1.4;
     font-size: 1.1rem;
+    text-align: center;
+}
+
+/* ============ CIA SECTION ============ */
+
+.cia-section {
+    padding: 1rem 9rem;
+    background-color: var(--color-dark);
+}
+
+.cia-section h5 {
+    color: var(--color-blue);
+    font-size: 0.9rem;
+    font-family: var(--font-bold);
+}
+
+.cia-section h3 {
+    color: var(--color-white);
+    font-size: 1.3rem;
+    font-family: var(--font-bold);
+}
+
+.cia-section p {
+    color: var(--color-ltblue);
+    font-size: 1.1rem;
+    font-family: var(--font-bold);
+}
+
+.cia-grid {
+    display: flex;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 8rem;
+    max-width: 900px;
+    min-width: 700px;
+}
+
+.card-cia {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: var(--color-white);
+    border: double var(--color-dark);
+}
+
+.card-cia:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(196, 223, 253, 0.743);
+}
+
+.cia-content {
+    padding: 1.5rem;
+}
+
+.cia-content h3 {
+    color: var(--color-black);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: var(--font-bold);
+}
+.cia-content h4 {
+    color: var(--color-ltblue);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+.cia-content p {
+    color:var(--color-dark);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    font-size: 1.1rem;
+}
+
+/* ============ AAA SECTION ============ */
+
+.aaa-section {
+    padding: 1rem 5rem;
+    background-color: var(--color-dark);
+}
+
+.aaa-section h5 {
+    color: var(--color-blue);
+    font-size: 0.9rem;
+    font-family: var(--font-bold);
+}
+
+.aaa-section h3 {
+    color: var(--color-white);
+    font-size: 1.3rem;
+    font-family: var(--font-bold);
+}
+
+.aaa-section p {
+    color: var(--color-ltblue);
+    font-size: 1.1rem;
+    font-family: var(--font-bold);
 }
