@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #000000;
 }
 
 :root {
@@ -14,6 +15,7 @@ body {
     --color-black: #000000;
     --color-dark: #122970;
     --color-ltblue: #c4dffd;
+    --color-lighter: #2a3f7e;
     /* Topography */
     --font-main: 'EB Garamond', Garamond, serif;
     --font-bold: 'Oswald', Arial, sans-serif; 
@@ -31,7 +33,7 @@ body {
 /* ============ NAV SECTION ============ */
 header {
     background-color: var(--color-dark);
-    position: relative;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 100;
@@ -45,7 +47,7 @@ header {
     padding: 1rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    font-family: var(--font-bold);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .nav-logo {
@@ -75,7 +77,7 @@ header {
 /* ============ HERO SECTION ============ */
 #hero {
     background-image: url('../images/digitalVault.png');
-    background-size: fill;
+    background-size: cover;
     background-position: top;
     min-height: 50vh;
     font-family: var(--font-bold);
@@ -152,8 +154,9 @@ header {
 
 .cards-section h3 {
     color: var(--color-black);
-    font-size: 1.3rem;
-    font-family: var(--font-bold);
+    font-size: 2.7rem;
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
 }
 
 .cards-section p {
@@ -177,12 +180,7 @@ header {
     overflow: hidden;
     transition: all 0.3s ease;
     background-color: var(--color-white);
-    border: double var(--color-dark);
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(196, 223, 253, 0.743);
+    border: double var(--color-blue);
 }
 
 .card-content {
@@ -196,6 +194,7 @@ header {
     text-align: center;
     font-family: var(--font-bold);
 }
+
 .card-content h4 {
     color: var(--color-ltblue);
     font-size: 0.9rem;
@@ -212,6 +211,9 @@ header {
     text-align: center;
 }
 
+.bg-image-2 {
+    background-image: url('../images/attacks1.png');
+}
 /* ============ CIA SECTION ============ */
 
 .cia-section {
@@ -227,8 +229,9 @@ header {
 
 .cia-section h3 {
     color: var(--color-white);
-    font-size: 1.3rem;
-    font-family: var(--font-bold);
+    font-size: 2.7rem;
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
 }
 
 .cia-section p {
@@ -251,13 +254,8 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: all 0.3s ease;
-    background-color: var(--color-white);
-    border: double var(--color-dark);
-}
-
-.card-cia:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(196, 223, 253, 0.743);
+    background-color: var(--color-lighter);
+    border: dashed var(--color-blue);
 }
 
 .cia-content {
@@ -265,12 +263,13 @@ header {
 }
 
 .cia-content h3 {
-    color: var(--color-black);
+    color: var(--color-ltblue);
     font-size: 1.5rem;
     margin-bottom: 1rem;
     text-align: center;
     font-family: var(--font-bold);
 }
+
 .cia-content h4 {
     color: var(--color-ltblue);
     font-size: 0.9rem;
@@ -280,16 +279,20 @@ header {
 }
 
 .cia-content p {
-    color:var(--color-dark);
+    color:var(--color-white);
     margin-bottom: 0.5rem;
     line-height: 1.4;
     font-size: 1.1rem;
 }
 
+.bg-image-1 {
+    background-image: url('../images/cia1.png');
+}
+
 /* ============ AAA SECTION ============ */
 
 .aaa-section {
-    padding: 1rem 5rem;
+    padding: 1rem 9rem;
     background-color: var(--color-dark);
 }
 
@@ -301,12 +304,140 @@ header {
 
 .aaa-section h3 {
     color: var(--color-white);
-    font-size: 1.3rem;
-    font-family: var(--font-bold);
+    font-size: 2.7rem;
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
 }
 
 .aaa-section p {
     color: var(--color-ltblue);
     font-size: 1.1rem;
     font-family: var(--font-bold);
+}
+
+.aaa-grid {
+    display: flex;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 7rem;
+    max-width: 900px;
+    min-width: 700px;
+    align-items: center;
+}
+
+.card-aaa {
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: var(--color-lighter);
+    border: dotted var(--color-blue);
+}
+
+.aaa-content {
+    padding: 1.5rem;
+}
+
+.aaa-content h3 {
+    color: var(--color-blue);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-family: var(--font-bold);
+    margin-top: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.aaa-content h4 {
+    color: var(--color-ltblue);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.aaa-content p {
+    color:var(--color-white);
+    margin-bottom: 0.5rem;
+    line-height: 0.8;
+    font-size: 1.4rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bg-image-3 {
+    background-image: url('../images/aaa1.png');
+}
+/* ============ PASSWORD SECTION ========== */
+.pass-section {
+    padding: 1rem 5rem;
+    background-color: var(--color-ltblue);
+}
+
+.pass-section h5 {
+    color: var(--color-blue);
+    font-size: 0.9rem;
+    font-family: var(--font-bold);
+}
+
+.pass-section h3 {
+    color: var(--color-black);
+    font-size: 2.7rem;
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.pass-section p {
+    color: var(--color-dark);
+    font-size: 1.1rem;
+    font-family: var(--font-bold);
+    margin-bottom: none;
+}
+
+.pass-grid {
+    display: flex;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem;
+    max-width: 1200px;
+    min-width: 600px;
+}
+
+.card-pass {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: var(--color-white);
+    border: double var(--color-blue);
+}
+
+.pass-content {
+    padding: 1.5rem;
+}
+
+.pass-content h3 {
+    color: var(--color-black);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pass-content h4 {
+    color: var(--color-lighter);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pass-content p {
+    color:var(--color-dark);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    font-size: 1.1rem;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bg-image-4 {
+    background-image: url('../images/attacks1.png');
 }
