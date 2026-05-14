@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #000000;
+    background-color: #fff;
 }
 
 :root {
@@ -10,7 +10,9 @@ body {
     --color-blue: #3fc0f8;   
     --color-green: #01c40e;
     --color-red: #f53434;
+    --color-orange:#d45e24;
     --color-gold: #FFD66B;
+    --color-dgreen: #035000;
     --color-white: #FFF;
     --color-black: #000000;
     --color-dark: #122970;
@@ -440,4 +442,83 @@ header {
 
 .bg-image-4 {
     background-image: url('../images/attacks1.png');
+}
+/* ============ TABLE SECTION ========== */
+.table-section {
+    background-color: var(--color-dark);
+    padding-bottom: 1rem;
+}
+
+.table-cap {
+    font-size: 1.7rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 2rem;
+    margin-left: 3rem;
+    color: var(--color-blue);
+}
+
+.table-sub {
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 3rem;
+    color: var(--color-ltblue)
+}
+
+table {
+    font-family: Arial;
+    border: 9px solid var(--color-lighter);
+    background-color:#fff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+tr:nth-child(even) {
+    background-color: #eaf0fa;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+}
+caption {
+    background-color: var(--color-black);
+    padding: 1rem 2rem;
+    color: var(--color-ltblue);
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    border: 2px solid var(--color-lighter);
+
+}
+
+.top-row {
+    background-color: var(--color-lighter);
+    padding: 2rem;
+}
+
+.red {
+    color: var(--color-red);
+}
+
+.orange {
+    color: var(--color-orange);
+}
+
+.yellow {
+    color: var(--color-gold);
+}
+
+.green {
+    color: var(--color-green)
+}
+
+.dark-green {
+    color: var(--color-dgreen);
+}
+
+.top-stuff {
+    color: var(--color-ltblue);
+    font-size: 1.05rem;
+    padding: 1rem 0;
 }
