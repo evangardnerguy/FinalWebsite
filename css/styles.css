@@ -522,3 +522,77 @@ caption {
     font-size: 1.05rem;
     padding: 1rem 0;
 }
+/*============= METHODS SECTION ===============*/
+.method-section {
+    padding: 1rem 5rem;
+    background-color: var(--color-ltblue);
+}
+
+.method-section h5 {
+    color: var(--color-blue);
+    font-size: 0.9rem;
+    font-family: var(--font-bold);
+}
+
+.method-section h3 {
+    color: var(--color-black);
+    font-size: 2.7rem;
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.method-section p {
+    color: var(--color-dark);
+    font-size: 1.1rem;
+    font-family: var(--font-bold);
+}
+
+.method-grid {
+    display: flex;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem;
+    max-width: 1200px;
+    min-width: 600px;
+}
+
+.card-method {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: var(--color-white);
+    border: double var(--color-blue);
+}
+
+.method-content {
+    padding: 1.5rem;
+}
+
+.method-content h3 {
+    color: var(--color-blue);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: var(--font-bold);
+}
+
+.method-content h4 {
+    color: var(--color-ltblue);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+.method-content p {
+    color:var(--color-dark);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.bg-image-2 {
+    background-image: url('../images/attacks1.png');
+}
