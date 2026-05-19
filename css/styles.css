@@ -548,12 +548,13 @@ caption {
 }
 
 .method-grid {
-    display: flex;
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, auto);
     gap: 2rem;
     padding: 3rem;
-    max-width: 1200px;
-    min-width: 600px;
+    max-width: 400px;
+    min-width: 400px;
 }
 
 .card-method {
@@ -563,6 +564,7 @@ caption {
     transition: all 0.3s ease;
     background-color: var(--color-white);
     border: double var(--color-blue);
+    min-width: 270px;
 }
 
 .method-content {
@@ -570,16 +572,16 @@ caption {
 }
 
 .method-content h3 {
-    color: var(--color-blue);
+    color: var(--color-black);
     font-size: 1.5rem;
     margin-bottom: 1rem;
     text-align: center;
-    font-family: var(--font-bold);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .method-content h4 {
-    color: var(--color-ltblue);
-    font-size: 0.9rem;
+    color: var(--color-lighter);
+    font-size: 1rem;
     margin-bottom: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
@@ -595,4 +597,30 @@ caption {
 
 .bg-image-2 {
     background-image: url('../images/attacks1.png');
+}
+
+
+.contact-section {
+    padding: 1rem 5rem;
+    background-color: var(--color-lighter);
+}
+
+.contact-section h5 {
+    color: var(--color-blue);
+    font-size: 0.9rem;
+    font-family: var(--font-bold);
+}
+
+.contact-section h3 {
+    color: var(--color-white);
+    font-size: 2.7rem;
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.contact-section p {
+    color: var(--color-ltblue);
+    font-size: 1.1rem;
+    font-family: var(--font-bold);
+    margin-bottom: none;
 }
