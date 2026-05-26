@@ -596,7 +596,10 @@ caption {
 }
 
 .bg-image-5 {
-    background-image: url(../images/attackComic.png);
+    background-image: url('../images/attackComic.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -623,4 +626,11 @@ caption {
     font-size: 1.1rem;
     font-family: var(--font-bold);
     margin-bottom: none;
+}
+
+.contact-main {
+    border: 5px double var(--color-blue);
+    padding: 10px;
+    border-width: 4px;
+    border-radius: 4px;
 }
